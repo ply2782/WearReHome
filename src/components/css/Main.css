@@ -1,0 +1,104 @@
+/* 공통 설정 */
+.Common {
+    color: black;
+    background-color: white;
+    font-size: calc(10px + 2vmin);
+    font-family: 'PyeongChangPeace-Bold';
+}
+
+.Common>ul>li {
+    list-style-type: none;
+}
+
+
+
+
+
+/* 뷰 설정 */
+.top {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.category {
+    padding: 3rem 0 3rem 0;
+    display: flex;
+    flex-direction: row;
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+.items {
+    flex: 1;
+    cursor: pointer;
+}
+
+.items4Row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 0 3rem 0 3rem;
+    text-align: center;
+}
+
+
+
+
+
+
+
+/* 아이콘 설정 */
+.mainIcon {
+    height: 96px;
+    aspect-ratio: 1/1;
+}
+
+
+
+
+
+
+
+
+/* 폰트 */
+@font-face {
+    font-family: 'PyeongChangPeace-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/PyeongChangPeace-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+
+
+
+
+
+/* 애니메이션 */
+@media (prefers-reduced-motion: no-preference) {
+    .mainIcon {
+        animation: main_icon_spin infinite 20s linear;
+    }
+}
+
+@keyframes main_icon_spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
