@@ -17,14 +17,11 @@
 /* 뷰 설정 */
 .top {
     margin-top: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 .textCenter {
     text-align: center;
+    align-items: center;
 }
 
 .column {
@@ -54,15 +51,31 @@
 }
 
 
+.menuContainer {
+    transform: translate(0, -50%);
+    position: absolute;
+    right: 0;
 
+}
 
+.rounded-button {
+    background-color: whitesmoke;
+    border: none;
+    width: 5rem;
+    height: 3rem;
+    cursor: pointer;
+}
+
+.marginRight10px {
+    margin-right: 10px;
+}
 
 
 
 /* 아이콘 설정 */
 .mainIcon {
+    width: 96px;
     height: 96px;
-    aspect-ratio: 1/1;
 }
 
 
