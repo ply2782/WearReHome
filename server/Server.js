@@ -12,11 +12,11 @@ const getDownloadFilename = require('./download/DownloadFileName').getDownloadFi
 /* db 연동 */
 const mysql = require('mysql');
 const conn = mysql.createConnection({
-    host: 'localhost',
-    port: '3306',
-    user: 'root',
-    password: 'gksksla2580456!@',
-    database: 'wearrehome'
+    host: '',
+    port: '',
+    user: '',
+    password: '',
+    database: ''
 });
 
 conn.connect((err) => {
